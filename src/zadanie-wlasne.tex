@@ -116,15 +116,3 @@ $ A_1 \coloneqq A;
 Q_k R_k \coloneqq A_k;
 A_{k+1} \coloneqq R_k Q_k
 \} $;
-% Metoda QR z przesunięciem.
-\entry
-Lepiej:
-$ A_1 \coloneqq A;
-\fromloop[1]{k}\{
-\text{wybierz przesunięcie } \sigma_k;
-Q_k R_k \coloneqq A_k - \sigma_kI;
-A_{k+1} \coloneqq R_k Q_k + \sigma_kI
-\} $;
-% Praktyczne QR.
-\entry
-Przed iteracją sprowadź $A$ do postaci Hassenberga lub trójdiagonalnej, gdy $A=A^T$;
