@@ -6,18 +6,12 @@ Liczby maszynowe: $x=(-1)^s \cdot m \cdot \beta^e$, gdzie $0\leq m < \beta$ i $m
 
 \entry
 Liczby znormalizowane: $x=(-1)^s\cdot m \cdot 2^e$, gdzie $1\leq m < 2$;
-
 \entry
-$x$ to l. m.,
-to $\mathrm{fl}(x)=x$,
-wpp. $\mathrm{fl}(x)=\mathrm{ROUND}(x)=\mathrm{RN}(x)$;
-% gdzie $\mathrm{RN}(x)$ zaokrągla do najbl. l. m.;
-
+Max błąd dla znormalizowanych: $ \frac{1}{2} \cdot \beta^{1 - m}$
 \entry
 $\mathrm{fl}(x) = x(1+\varepsilon_x)$, $\abs{\varepsilon_x}\leq \nu$
 \entry
 Błąd reprezentacji: $\shortabs{\mathrm{fl}(x) - x}$;
-
 \entry
 $\flatfrac{\shortabs{\mathrm{fl}(x) - x}}{\shortabs{x}}\leq 2^{-p}=\nu$, o ile nie ma *flow;
 % Fused multiply-add.

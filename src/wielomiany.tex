@@ -2,22 +2,18 @@
 
 % Interpolacja Lagrange'a.
 \entry
-\textbf{I. L.}:
+\textbf{I. Lagrange'a}:
 $w(x_i) = f(x_i)$;
 % Interpolacja Hermite'a.
 \entry
 \textbf{I. Hermite'a}:
 $\deriv{w}{k}(x_i) = \deriv{f}{k}_i, k = 0 \ldots m$;
-
 % Twierdzenie o interpolacji.
 \entry
-Tw.:
+Tw. o interpolacji:
 $\ipoints[i=0][n][a=][=b]{x_i}, f(x_i)$,
 to
 $\exists!_{w \in \mathbb{P}_n} w(x_i)=f(x_i)$;
-
-% Dowód/intuicja dla twierdzenia o interpolacji.
-\entry
 $w(x_j) = y_i = \sum_{i=0}^n\alpha_i\varphi_i(x_j) = y_i$;
 % Baza naturalna i macierz Vandermonde'a.
 \entry
@@ -29,10 +25,9 @@ $[x^j_i]$
 
 % Baza Newtona.
 \entry
-\textbf{B. Newtona}:
+\textbf{Baza Newtona}:
 $\varphi_i(x) \coloneqq (x-x_0)\cdots(x-x_i),
 (w_n(x)-w_{n-1}(x) = b_n\varphi_n(x))$;
-
 % Algorytm różnic dzielonych.
 % (MP: 30 XI/3/1332)
 \entry
@@ -48,18 +43,17 @@ $;
 % (MP: 1 XII/1.5/3)
 
 % Twierdzenie o błędzie interpolacji.
-\textbf{Tw. o bł. i.}:
+\entry
+\textbf{Tw. o błędzie interpolacji}:
 $f\in C^{n+1}[a;b], \ipoints[0][n][a=][=b]{x_i}, w_n(x)$ jest w. i. L.
 Wtedy
 $\forallin{x}{[a;b]} \existsin{\xi}{(a;b)} f(x) - w_n(x) = \frac{\deriv{f}{n+1}(\xi)}{(n+1)!}\omega_n(x)$,
 gdzie $\omega_n(x)=\varphi_{n+1}(x)$;
-
 % TODO: Interpolacja Hermite'a.
 % (MP: 30 XI/4.5/15)
-
 % Baza Lagrange'a.
 \entry
-B. Lagrange'a:
+\textbf{Baza Lagrange'a:}
 $
 l_i(x) = \frac{(x-x_0)\cdots(x-x_n)}{(x_i - x_0)\cdots(x_i - x_{i-1})(x_i - x_{i+1}) \cdots (x_i - x_n)},
 l_i(x_j) = [i=j],
@@ -80,8 +74,8 @@ $\mathcal{O}(n)$;
 % Błąd interpolacji dla równoodległych węzłów.
 % (MP: 1 XII/3/5)
 \entry
-Błąd i. dla $=_h$ węzłów:
-$f \in C^{n+1}[a;b], \ipoints[i=0][n][a=][=b]{x_i=a+ih}$, to
+\textbf{Błąd i. dla równoodległych węzłów:}
+$f \in C^{n+1}[a;b]$, n+1 węzłów, $h = x_{i+1} - x_i$ to
 $\max_{x \in [a;b]}\shortabs{f(x)-w(x)} \leq \frac{\max_\xi\shortabs{\deriv{f}{n+1}(\xi)} h^{n+1}}{4(n+1)}$,
 $\shortabs{\varphi_{n+1}(x)} \leq \frac{1}{4} h^{n+1} n!$;
 

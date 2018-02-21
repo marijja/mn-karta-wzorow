@@ -36,8 +36,8 @@ $f$ musi być różniczkowalna;
 \subentry
 musi być znany wzór na pochodną;
 \subentry
-$f'(\ena{x}) \neq 0 \Rightarrow \ena{x}$ zerem jednokrotnym i gdy krotności $m$, 
-to metoda zbiega liniowo do 
+$f'(\ena{x}) \neq 0 \Rightarrow \ena{x}$ zerem jednokrotnym i gdy krotności $m$,
+to metoda zbiega liniowo do
 $\abs{x_{n+1} - \ena{x}} \approx (1-1/m) \cdot \abs{x_n - \ena{x}}$;
 
 % Metoda Newtona dla 1/a.
@@ -73,10 +73,9 @@ $x_n \rightarrow \ena{x} \Rightarrow \ena{x} = F(\ena{x})$;
 \textbf{Tw. Banacha o kontrakcji}:
 $F:[a;b] \Rightarrow [a;b]$
 i spełnia warunki kontrakcji:
-$\exists_{\gamma < 1} \forallin{x,y}{[a;b]} F(\ena{x}) = \ena{x}$
-oraz ciąg 
-$x_{n+1} = F(x_n)$ 
-jest zbieżny liniowo 
+$\exists_{\gamma < 1} \forallin{x,y}{[a;b]} abs{x_{n+1} - \ena{x}} \leq \gamma \abs{x_n - \ena{x}}$
+to kontrakcja ma jeden punkt stały $\ena{x}$
+$x_{n+1} = F(x_n)$
+jest zbieżny liniowo
 $\forallin{x_o}{[a;b]}$
-do $\ena{x}$:
-$\abs{x_{n+1} - \ena{x}} \leq \gamma \abs{x_n - \ena{x}}$;
+do $\ena{x}$
